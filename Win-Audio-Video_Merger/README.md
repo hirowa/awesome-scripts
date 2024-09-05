@@ -1,4 +1,4 @@
-## Audio-Video Merger Script
+## Audio-Video Merger
 
 ### Script Overview
 This script merges an audio file with a video file using FFmpeg, a popular multimedia framework. The merged file will contain the original video stream combined with the new audio stream, saved as an output file in the same directory as the original video with '_merged' appended to its name. This tool is useful for situations where you need to replace or add an audio track to a video without re-encoding the video stream.
