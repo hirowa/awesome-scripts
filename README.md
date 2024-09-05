@@ -1,4 +1,6 @@
 ## 📂 Awesome Scripts Collection
-Welcome to the Awesome Scripts Collection! This repository is a growing collection of various useful scripts designed to automate and simplify everyday tasks. Whether you're managing files, processing data, or enhancing productivity, these scripts are here to help you streamline your workflow and save time. Dive in and explore the tools that make your life easier! 🚀
+Welcome to the Awesome Scripts Collection! This repository features a growing collection of scripts custom-made to fit my specific needs. These scripts are designed to automate and simplify a variety of tasks, from file management to data processing, and more. 🚀
 
-Feel free to browse through the different scripts, and stay tuned for more additions! Your contributions and ideas are always welcome to expand this ever-growing library of useful scripts. 🌟
+⚠️ Please Note: These scripts are tailored to my personal workflow and preferences, so they might not be as straightforward to use for everyone else. Feel free to explore and adapt them to suit your own requirements!
+
+Stay tuned for more additions, and feel free to contribute or suggest new ideas to expand this evolving library of custom scripts. 🌟
