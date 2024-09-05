@@ -1,4 +1,4 @@
-## README
+## AI Course Notes Generator
 ### Script Overview
 This script automates the summarization and note-taking process for university degree program materials from PDF files. It extracts text from PDF documents, sends the extracted text to the OpenAI API for summarization, and saves the generated summaries as text files. This script is particularly useful for students, educators, and researchers who need to condense large volumes of academic material into concise summaries.
 
@@ -20,8 +20,9 @@ This script automates the summarization and note-taking process for university d
    ```bash
    pip install PyMuPDF requests
    ```
-3. Insert your OpenAI API key into the script:
-   - Replace `<put_your_api_key_here>` in the script with your actual OpenAI API key.
+3. Set Up Your OpenAI API Key and Prompt:
+    Replace <put_your_api_key_here> in the script with your actual OpenAI API key.
+    Replace <put_prompt_here> in the DATA_TEMPLATE dictionary with your desired prompt. This prompt will instruct the AI on how to summarize the content.
 
 #### Usage
 - Place the PDF files to be summarized in a directory.
