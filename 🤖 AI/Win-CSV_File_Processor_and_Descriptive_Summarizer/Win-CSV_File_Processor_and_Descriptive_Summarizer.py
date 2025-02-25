@@ -6,7 +6,7 @@ import re  # Import regex module to sanitize filenames
 
 # Constants for the API
 API_URL = "https://api.openai.com/v1/chat/completions"
-API_KEY = "<your_api_key_here>"
+API_KEY = os.getenv('OPENAI_API_KEY'),
 HEADERS = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {API_KEY}"

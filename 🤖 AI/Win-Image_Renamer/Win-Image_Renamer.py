@@ -5,7 +5,7 @@ import time
 
 # Constants for API call
 API_URL = "https://api.openai.com/v1/chat/completions"
-API_KEY = "<your_api_key_here>"  # Add your API key here
+API_KEY = os.getenv('OPENAI_API_KEY'),
 HEADERS = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {API_KEY}"

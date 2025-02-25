@@ -2,7 +2,7 @@ import time
 import openai  # Import the openai module
 
 def main():
-    api_key = read_api_key('api_key.txt')
+    api_key = os.getenv('OPENAI_API_KEY'),
     voice = get_voice_input()
     lines = read_lines_from_file('input.txt')  # Assuming the file is named 'input.txt'
     
