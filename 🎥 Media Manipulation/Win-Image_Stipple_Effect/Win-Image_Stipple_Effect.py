@@ -133,7 +133,7 @@ class StippleApp:
         self.export_btn.pack(pady=5, fill=tk.X)
 
         # New: Button to export all images with the same settings
-        self.export_all_btn = Button(control_frame, text="Export All with same settings", command=self.export_all_svg)
+        self.export_all_btn = Button(control_frame, text="Export All (Same Settings)", command=self.export_all_svg)
         self.export_all_btn.pack(pady=5, fill=tk.X)
 
         # New: Reset button to restore original state (no uploaded images + original settings)
