@@ -1,11 +1,18 @@
 import json
 import csv
 import html2text
+import os
 
 # Prompt the user for input file path and output file name,
 # and strip any extra quotes.
 input_file_path = input("Enter the path to your JSON file: ").strip().strip('"')
 output_file_name = input("Enter the output CSV file name (e.g., articles.csv): ").strip().strip('"')
+
+# Extract the directory from the input path
+input_dir = os.path.dirname(input_file_path)
+
+# Combine directory with output filename to form full output path
+output_file_path = os.path.join(input_dir, output_file_name)
 
 # Load the JSON data from the user-provided file path
 with open(input_file_path, 'r', encoding='utf-8') as f:
@@ -35,8 +42,8 @@ fieldnames = [
     "full_url"
 ]
 
-# Write the processed data to the output CSV file provided by the user
-with open(output_file_name, 'w', newline='', encoding='utf-8') as csvfile:
+# Write the processed data to the output CSV file in the same directory
+with open(output_file_path, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
@@ -62,4 +69,4 @@ with open(output_file_name, 'w', newline='', encoding='utf-8') as csvfile:
         }
         writer.writerow(row)
 
-print(f"CSV has been created and saved as '{output_file_name}'.")
+print(f"CSV has been created and saved as '{output_file_path}'.")
