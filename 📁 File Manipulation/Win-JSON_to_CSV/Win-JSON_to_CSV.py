@@ -2,9 +2,10 @@ import json
 import csv
 import html2text
 
-# Prompt the user for input file path and output file name
-input_file_path = input("Enter the path to your JSON file: ").strip()
-output_file_name = input("Enter the output CSV file name (e.g., articles.csv): ").strip()
+# Prompt the user for input file path and output file name,
+# and strip any extra quotes.
+input_file_path = input("Enter the path to your JSON file: ").strip().strip('"')
+output_file_name = input("Enter the output CSV file name (e.g., articles.csv): ").strip().strip('"')
 
 # Load the JSON data from the user-provided file path
 with open(input_file_path, 'r', encoding='utf-8') as f:
